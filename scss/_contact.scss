@@ -1,0 +1,138 @@
+@use "_variables.scss";
+#contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: variables.$amarillo_patito;
+
+    h3{
+        font-size: 3rem;
+            color:variables.$cafe_intenso;
+        margin-top: 5%;
+        margin-bottom:0%;
+    }
+    p{
+        color:variables.$plomo;
+        font-size:1rem;
+        margin-bottom: 5%;
+    }
+}
+#contactanos {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    color: variables.$cafe_intenso;
+  }
+
+  p {
+    color:variables.$plomo;
+  }
+}
+
+#contenedorPrincipal {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+#informacionContacto {
+  flex: 1;
+
+  article {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 40px;
+      height: 40px;
+      background: variables.$naranja_suave;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .let {
+      h5 {
+        margin: 0;
+        color: #8b4513;
+      }
+
+      p {
+        margin: 0.2rem 0;
+        color: #444;
+      }
+    }
+  }
+}
+
+#formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  label {
+    font-weight: bold;
+    color:variables.$cafe_intenso;
+  }
+
+  input {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+
+    &:focus {
+      border-color: variables.$cafe_intenso;
+    }
+  }
+
+
+
+  button {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: variables.$naranja_suave;
+    color: variables.$blanco;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background: #8b4513;
+    }
+  }
+}
+
+#visitanos {
+  margin-top: 2rem;
+  background:variables.$cafe_intenso;
+  padding: 2rem;
+
+  text-align: center;
+  color: variables.$blanco;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 100%;
+    
+  }
+}

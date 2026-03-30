@@ -1,3 +1,465 @@
+.hero {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://dobetter.esade.edu/sites/default/files/post/2024-01/AI-technological-revolution-existential-threat-w.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+#hero .tituloPrincipal {
+  size: 8cm;
+  color: #ffffff;
+}
+#hero .p-banner {
+  color: #ffffff;
+}
+.hero .ver-menu {
+  background-color: #c2702d;
+  border-radius: 4rem;
+  padding: 15px 30px;
+}
+#hero .ver-servicios .btn-menu {
+  color: #0c255c;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 100;
+  padding-bottom: 15%;
+}
+
+.detalles {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: rgb(123, 51, 6);
+}
+.detalles .tarjeta-detalles {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.detalles .tarjeta-detalles {
+  text-align: justify;
+  padding: 20px 10px;
+}
+
+.biografia {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 5%;
+  gap: 4rem;
+}
+.biografia .img-bio {
+  flex: 1;
+  max-width: 500px;
+}
+.biografia .img-bio img {
+  width: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.biografia .texto-bio {
+  flex: 1;
+  max-width: 600px;
+}
+.biografia .texto-bio h2 {
+  color: #c2702d;
+  margin-bottom: 1.5rem;
+}
+.biografia .texto-bio p {
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .biografia {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .biografia .img-bio, .biografia .texto-bio {
+    max-width: 100%;
+  }
+}
+
+.galeria {
+  background-color: black;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.galeria h2 {
+  color: #c2702d;
+}
+.galeria .fotos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px 80px;
+  gap: 2rem;
+}
+.galeria .fotos .carrusel {
+  border-radius: 2rem;
+}
+.galeria .fotos .carrusel:hover {
+  border-radius: 5rem;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px gold;
+  border-color: 3px solid goldenrod;
+}
+
+.visitanos {
+  max-width: auto;
+  max-height: 600px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2702d;
+  text-align: center;
+  gap: 1rem;
+}
+.visitanos .contacta {
+  background-color: black;
+  border-radius: 8rem;
+  padding: 40px 30px;
+  text-align: center;
+}
+.visitanos .contacta .btn-contacto {
+  text-decoration: none;
+}
+
+.btn-subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: goldenrod;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.btn-subir.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+.btn-subir:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(218, 165, 32, 0.4);
+}
+
+.btn-hamburguesa {
+  display: none;
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
+}
+@media (max-width: 767px) {
+  .btn-hamburguesa {
+    display: block;
+  }
+}
+
+#titulo {
+  color: rgb(123, 51, 6);
+  background-color: rgb(255, 248, 219);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1%;
+  width: 100%;
+}
+#titulo h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+#titulo p {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 100%;
+  padding-bottom: 3%;
+}
+
+.imagenTitulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+  font-size: 75%;
+}
+.imagenTitulo img {
+  width: 2rem;
+}
+
+.buscador {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+.buscador input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.buscador input:focus {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #c2702d;
+}
+.buscador .icono {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #c2702d;
+}
+@media (max-width: 768px) {
+  .buscador .buscador {
+    max-width: 90%;
+  }
+  .buscador .buscador input {
+    font-size: 14px;
+    padding: 10px 35px 10px 12px;
+  }
+}
+
+#servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 5%;
+}
+#servicios article {
+  background: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+#servicios article:hover {
+  transform: translateY(-5px);
+}
+#servicios article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#servicios article .NombrePrecio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px 5px;
+}
+#servicios article .NombrePrecio h3 {
+  margin: 0;
+  font-size: 18px;
+}
+#servicios article .NombrePrecio p {
+  margin: 0;
+  color: #c2702d;
+  font-weight: bold;
+}
+#servicios article > p {
+  padding: 0 20px 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+#notas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 248, 219);
+  color: rgb(80, 80, 86);
+  height: 10rem;
+  text-align: center;
+}
+#notas p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+@media (max-width: 900px) {
+  #servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  #servicios {
+    grid-template-columns: 1fr;
+  }
+  #titulo {
+    padding-top: 13%;
+  }
+  #titulo p {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+#mensajeVacio {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+  font-size: 18px;
+}
+
+#contactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(255, 248, 219);
+}
+#contactanos h3 {
+  font-size: 3rem;
+  color: rgb(123, 51, 6);
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+#contactanos p {
+  color: rgb(80, 80, 86);
+  font-size: 1rem;
+  margin-bottom: 5%;
+}
+
+#contactanos {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#contactanos h3 {
+  font-size: 2rem;
+  color: rgb(123, 51, 6);
+}
+#contactanos p {
+  color: rgb(80, 80, 86);
+}
+
+#contenedorPrincipal {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+@media (max-width: 768px) {
+  #contenedorPrincipal {
+    flex-direction: column;
+  }
+}
+
+#informacionContacto {
+  flex: 1;
+}
+#informacionContacto article {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+#informacionContacto article img {
+  width: 40px;
+  height: 40px;
+  background: #c2702d;
+  padding: 10px;
+  border-radius: 50%;
+}
+#informacionContacto article .let h5 {
+  margin: 0;
+  color: #8b4513;
+}
+#informacionContacto article .let p {
+  margin: 0.2rem 0;
+  color: #444;
+}
+
+#formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#formulario label {
+  font-weight: bold;
+  color: rgb(123, 51, 6);
+}
+#formulario input {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+#formulario input:focus {
+  border-color: rgb(123, 51, 6);
+}
+#formulario button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #c2702d;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#formulario button:hover {
+  background: #0c255c;
+}
+
+#visitanos {
+  margin-top: 2rem;
+  background: rgb(123, 51, 6);
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+#visitanos h3 {
+  font-size: 2rem;
+}
+#visitanos h4 {
+  font-size: 100%;
+  font-weight: normal;
+}
+#visitanos p {
+  font-size: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -45,7 +507,7 @@ header nav #nav-links a {
   transition: 0.3s;
 }
 header nav #nav-links a.activo, header nav #nav-links a:hover {
-  color: #8FBFFA;
+  color: #c2702d;
   font-weight: bold;
 }
 @media (max-width: 767px) {
@@ -76,105 +538,11 @@ header nav .btn-hamburguesa {
   font-size: 2.5rem;
   background: none;
   border: none;
-  color: #8FBFFA;
+  color: #c2702d;
   cursor: pointer;
 }
 @media (max-width: 767px) {
   header nav .btn-hamburguesa {
-    display: block;
-  }
-}
-
-#hero {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://dobetter.esade.edu/sites/default/files/post/2024-01/AI-technological-revolution-existential-threat-w.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  right: 0;
-  left: 0;
-}
-#hero .tituloPrincipal {
-  size: 8cm;
-  color: #ffffff;
-}
-#hero .p-banner {
-  color: #ffffff;
-}
-#hero .ver-servicios {
-  background-color: #8FBFFA;
-  border-radius: 4rem;
-  padding: 15px 30px;
-}
-#hero .ver-servicios .btn-menu {
-  color: #0c255c;
-  text-decoration: none;
-  cursor: pointer;
-  z-index: 100;
-  padding-bottom: 15%;
-}
-
-.detalles {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: #0c255c;
-}
-.detalles .tarjeta-detalles {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-}
-.detalles .tarjeta-detalles {
-  text-align: justify;
-  padding: 20px 10px;
-}
-
-.btn-subir {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: goldenrod;
-  color: black;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-}
-.btn-subir.mostrar {
-  opacity: 1;
-  visibility: visible;
-}
-.btn-subir:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(218, 165, 32, 0.4);
-}
-
-.btn-hamburguesa {
-  display: none;
-  font-size: 2.5rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  z-index: 100;
-}
-@media (max-width: 767px) {
-  .btn-hamburguesa {
     display: block;
   }
 }
@@ -187,7 +555,7 @@ header {
   z-index: 1000;
 }
 header #nav-links a.activo {
-  color: #8FBFFA;
+  color: #c2702d;
   font-weight: bold;
 }
 @media (max-width: 767px) {
@@ -212,8 +580,8 @@ header #nav-links a.activo {
 }
 
 .piePagina {
-  background-color: #0c255c;
-  color: #8FBFFA;
+  background-color: rgb(33, 14, 2);
+  color: #c2702d;
   padding: 40px 20px 20px 20px;
 }
 
@@ -256,7 +624,7 @@ header #nav-links a.activo {
 }
 
 .iconoRed {
-  background-color: #8FBFFA;
+  background-color: #c2702d;
   color: white;
   text-decoration: none;
   width: 40px;
@@ -275,7 +643,7 @@ header #nav-links a.activo {
 
 .lineaSeparadora {
   border: none;
-  border-top: 1px solid #8FBFFA;
+  border-top: 1px solid #c2702d;
   margin: 20px auto;
   max-width: 1100px;
 }
@@ -286,146 +654,10 @@ header #nav-links a.activo {
   color: ffd27f;
 }
 
-.buscador {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: row;
-}
-.buscador input {
-  width: 100%;
-  padding: 12px 40px 12px 15px;
-  border-radius: 25px;
-  border: none;
-  outline: none;
-  background: #ffffff;
-  font-size: 16px;
-  transition: 0.3s ease;
-}
-.buscador input:focus {
-  background: #ffffff;
-  box-shadow: 0 0 0 2px #8FBFFA;
-}
-.buscador .icono {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: #8FBFFA;
-}
-@media (max-width: 768px) {
-  .buscador .buscador {
-    max-width: 90%;
-  }
-  .buscador .buscador input {
-    font-size: 14px;
-    padding: 10px 35px 10px 12px;
-  }
-}
-
-#servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  padding: 40px 5%;
-}
-#servicios article {
-  background: #f5f5f5;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-#servicios article:hover {
-  transform: translateY(-5px);
-}
-#servicios article img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-#servicios article .NombrePrecio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px 5px;
-}
-#servicios article .NombrePrecio h3 {
-  margin: 0;
-  font-size: 18px;
-}
-#servicios article .NombrePrecio p {
-  margin: 0;
-  color: #8FBFFA;
-  font-weight: bold;
-}
-#servicios article > p {
-  padding: 0 20px 20px;
-  color: #666;
-  font-size: 14px;
-}
-
-@media (max-width: 900px) {
-  #servicios {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 500px) {
-  #servicios {
-    grid-template-columns: 1fr;
-  }
-  #titulo {
-    padding-top: 13%;
-  }
-  #titulo p {
-    padding-right: 2%;
-    padding-left: 2%;
-  }
-}
-#mensajeVacio {
-  display: none;
-  text-align: center;
-  margin-top: 20px;
-  color: #888;
-  font-size: 18px;
-}
-
-#formulario {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-#formulario label {
-  font-weight: bold;
-  color: #0c255c;
-}
-#formulario input {
-  padding: 0.8rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  outline: none;
-}
-#formulario input:focus {
-  border-color: #0c255c;
-}
-#formulario button {
-  margin-top: 1rem;
-  padding: 1rem;
-  background: #8FBFFA;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-#formulario button:hover {
-  background: #0c255c;
+.carrusel:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 230, 255, 0.15);
+  border-color: gold;
 }
 
 /*# sourceMappingURL=style.css.map */
