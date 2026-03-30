@@ -1,0 +1,24 @@
+{
+  "name": "tec_web_ii_careteria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+"watch:sass": "sass --watch scss/style.scss dist/css/style.css"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lackio-EL-14/TEC_WEB_II_CARETERIA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lackio-EL-14/TEC_WEB_II_CARETERIA/issues"
+  },
+  "homepage": "https://github.com/Lackio-EL-14/TEC_WEB_II_CARETERIA#readme",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}

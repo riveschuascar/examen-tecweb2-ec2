@@ -15,10 +15,10 @@
 
 <body>
     <header>
-         <nav>
+        <nav>
             <div id="logo">
-             <img src="img/dish_spoon_icon-icons.com_52313.png" alt="iconoDeUnCapucchino">
-             <h2>Café Infinito</h2>
+                <img src="img/dish_spoon_icon-icons.com_52313.png" alt="iconoDeUnCapucchino">
+                <h2>Café Infinito</h2>
             </div>
             <ul id="nav-links">
                 <li>
@@ -31,71 +31,68 @@
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
-        <button id="btn-menu" class="btn-hamburguesa">☰</button> 
+            <button id="btn-menu" class="btn-hamburguesa">☰</button> 
         </nav>
     </header>
-
-    <br><br>
-
-    <div class="hero">
-      <h1 class="tituloPrincipal">Bienvenidos A Cafe Infinito</h1>
-      <h3 class="p-banner">Donde cada taza cuenta una histroria</h3>
-      <div class="ver-menu">
-        <a href="menu.html" class="btn-menu">Ver Nuestro menu</a>
-      </div>
+    <div id="contactanos">
+        <h3>Contáctanos</h3>
+        <p>Estamos aquí para ayudarte, No dudes en visitarnos o escribirnos</p>
     </div>
+    <div id="contenedorPrincipal">
+        <div id="informacionContacto">
+            <article>
+                <img src="img/ubi.png" alt="icono de ubicacion">
+                <div class="let">
+                    <h5>Dirección</h5>
+                    <p>Avenida Principal 123</p>
+                    <p>2003 Cochabamba, Bolivia</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/mynaui_telephone.png" alt="icono de telefono">
+                <div class="let">
+                    <h5>Teléfono</h5>
+                    <p>+591 75904352</p>
+                    <p>+591 78451278</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/gmail.png" alt="icono de email">
+                <div class="let">
+                    <h5>Email</h5>
+                    <p>hola@cafeInfinito.com</p>
+                    <p>reservas@cafeInfinito.com</p>
+                </div>
+            </article>
+            <article>
+                <img src="img/reloj.png" alt="">
+                <div class="let">
+                    <h5>Horario</h5>
+                    <p>
+                        Lunes - Viernes: 7:00 AM - 9:00 PM</p>
+                    <p>Sábados - Domingos: 8:00 AM - 10:00 PM</p>
+                </div>
+            </article>
+        </div>
+        <div id="formulario">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre">
 
-    <div class="detalles">
-      <article class="tarjeta-detalles">
-        <img src="img/cafe premium.png" alt="cafe-premium">
-        <h4 class="h4-detalles">Cafe Premium</h4>
-        <p>Granos selectos de origen único, tostados artesanalmente</p>
-      </article>
-      <article class="tarjeta-detalles">
-        <img src="img/corazon.png" alt="Hecho con Amor">
-        <h4 class="h4-detalles">Hecho con Amor</h4>
-        <p>Cada bebida es preparada con dedicación y pasión por nuestros baristas</p>
-      </article>
-      <article class="tarjeta-detalles">
-        <img src="img/Premiados.png" alt="Premiados">
-        <h4 class="h4-detalles">Premiados</h4>
-        <p>Reconocidos como la mejor cafetería de especialidad de la ciudad</p>
-      </article>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="mensaje">Mensaje</label>
+            <input type="text" id="mensaje">
+
+            <button onclick="enviarFormulario()">Enviar Mensaje</button>
+        </div>
     </div>
-
-    <div class="biografia">
-      <div class="img-bio">
-        <img src="img/historia.png" alt="imagen de nuestra histroria juntos :(">
-      </div>
-      <div class="texto-bio">
-        <h2>Nuestra Historia</h2>
-        <p>Desde 2025, Café Infinito ha sido el corazón de nuestra comunidad, ofreciendo café de especialidad y un espacio acogedor donde las conexiones florecen asi que trae a tu saliente no te arrepentiras.</p>
-        <br>
-        <p>Nuestro compromiso es simple: servir el mejor café posible mientras creamos momentos memorables para cada cliente que cruza nuestra puerta.</p>
-      </div>
+    <div id="visitanos">
+        <h3>¿Prefieres Visitarnos?</h3>
+        <h4>Nuestras puertas están siempre abiertas. ¡Te esperamos con una taza caliente!</h4>
+        <p>No es necesario reservar, pero si vienes en grupo grande, te recomendamos llamar con anticipación.</p>
     </div>
-
-    <div class="galeria">
-      <h2>Galeria Profesional</h2>
-      <br>
-      <div class="fotos">
-        <img src="img/cafe-galeria.png" alt="nuestro mejor cafe" class="carrusel">
-        <img src="img/masas-galeria.png" alt="masitas" class="carrusel">
-        <img src="img/granos.png" alt="materia prima" class="carrusel">
-      </div>
-    </div>
-
-
-    <div class="visitanos">
-      <img src="img/reloj.png" alt="reloj de horarios">
-      <h2>Visitanos Cuando Gustes</h2>
-      <p>Lunes a Viernes: 7:00 AM - 9:00 PM | Sábados y Domingos: 8:00 AM - 10:00 PM</p>
-      <div class="contacta">
-        <a href="contacto.html" class="btn-contacto">Encuentranos</a>
-      </div>
-    </div>
-
-        <footer class="piePagina">
+    <footer class="piePagina">
         <div class="contenedorFooter">
 
             <div class="seccionFooter">

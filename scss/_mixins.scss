@@ -1,0 +1,14 @@
+
+@mixin alinear-vertical($direccion: column wrap, $eje-y: center, $eje-x: center){
+  display: flex;
+  flex-flow: $direccion;
+  justify-content: $eje-y;
+  align-items: $eje-x;
+}
+
+@mixin alinear-horizontal($direccion: row wrap, $eje-y: space-around, $eje-x: flex-start){
+  display: flex;
+  flex-flow: $direccion;
+  justify-content: $eje-y;
+  align-items: $eje-x;
+}

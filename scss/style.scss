@@ -1,0 +1,210 @@
+@use "_variables.scss";
+@use "_home.scss";
+@use "_menu.scss";
+@use "_contact.scss";
+
+body {
+    font-family: variables.$fuente_principal;
+    padding: 0;
+    margin: 0;
+    padding-top: 100px; 
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: variables.$blanco;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 15px 5%; 
+        position: relative; 
+
+        #logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            h2 { font-size: 1.5rem; margin: 0; }
+            img { width: 50px; }
+        }
+
+        #nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+
+            a {
+                text-decoration: none;
+                color: variables.$plomo;
+                font-size: 1rem;
+                transition: 0.3s;
+                
+                &.activo, &:hover { 
+                    color: variables.$naranja_suave; 
+                    font-weight: bold; 
+                }
+            }
+
+            @media (max-width: 767px) {
+                display: none; 
+                position: absolute;
+                top: 100%; 
+                right: 0; 
+                left: auto; 
+                width: 250px; 
+                background-color: #222;
+                flex-direction: column;
+                padding: 20px 0;
+                text-align: center;
+                gap: 2rem;
+                box-shadow: -5px 10px 15px rgba(0,0,0,0.5); 
+                border-bottom-left-radius: 15px; 
+
+                &.menu-abierto { display: flex; }
+                
+                a { color: white; } 
+            }
+        }
+
+        .btn-hamburguesa {
+            display: none;
+            font-size: 2.5rem;
+            background: none;
+            border: none;
+            color: variables.$naranja_suave;
+            cursor: pointer;
+
+            @media (max-width: 767px) {
+                display: block; 
+            }
+        }
+    }
+}
+header {
+    width: 100%;
+    position: fixed;
+    background-color: variables.$blanco ;
+    top: 0;
+    z-index: 1000;
+
+    #nav-links a.activo {
+        color: variables.$naranja_suave;
+        font-weight: bold;
+
+        @media (max-width: 767px) {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+      
+        right: 0;        
+        left: auto;     
+        width: 250px;   
+      
+        background-color: #222;
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+        gap: 2rem;
+        box-shadow: -5px 10px 15px rgba(0,0,0,0.5); 
+        border-bottom-left-radius: 15px; 
+  
+        &.menu-abierto {
+          display: flex; 
+        }
+      }
+    }
+
+}
+
+
+.piePagina {
+    background-color: rgb(33, 14, 2);
+    color: variables.$naranja_suave;
+    padding: 40px 20px 20px 20px;
+}
+
+.contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.seccionFooter {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.tituloLogo {
+    color: variables.$cafe_suave;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 25%;
+    }
+}
+
+.tituloSeccion {
+    color: variables.$cafe_suave;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    line-height: 1.5;
+}
+
+.redesSociales {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.iconoRed {
+    background-color: variables.$naranja_suave;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.iconoRed:hover {
+    background-color: variables.$naranja_leve;
+}
+
+.lineaSeparadora {
+    border: none;
+    border-top: 1px solid variables.$naranja_suave;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: variables.$naranja_leve;
+}
+
+
+
+.carrusel:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 230, 255, 0.15);
+    border-color: gold;
+}
