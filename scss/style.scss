@@ -45,7 +45,7 @@ header {
                 transition: 0.3s;
                 
                 &.activo, &:hover { 
-                    color: variables.$naranja_suave; 
+                    color: variables.$color_secundario; 
                     font-weight: bold; 
                 }
             }
@@ -76,7 +76,7 @@ header {
             font-size: 2.5rem;
             background: none;
             border: none;
-            color: variables.$naranja_suave;
+            color: variables.$color_secundario;
             cursor: pointer;
 
             @media (max-width: 767px) {
@@ -87,29 +87,40 @@ header {
 }
 
 
-.hero{
+#hero{
   @include mixins.alinear-vertical();
-  background-color: gray;
-  height: 600px;
+
+
+     background-image:url("https://dobetter.esade.edu/sites/default/files/post/2024-01/AI-technological-revolution-existential-threat-w.webp");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
    
-  .titulo-principal{
+  .tituloPrincipal{
     size: 8cm;  
+    color: variables.$blanco;
+    
   }
 
   .p-banner{
-    color: goldenrod;
+    color: variables.$blanco;
   }
 
-  .ver-menu{
-    background-color: variables.$naranja_suave;
+  .ver-servicios{
+    background-color: variables.$color_secundario;
     border-radius: 4rem;
     padding: 15px 30px;
 
     .btn-menu{
-      color: rgba($color: #000000, $alpha: 1.0);
+      color: rgba($color: variables.$color_principal, $alpha: 1.0);
       text-decoration: none;
       cursor: pointer;
       z-index: 100;
+      padding-bottom: 15%;
  
     }
   }
@@ -118,7 +129,7 @@ header {
 
 .detalles{
   @include mixins.alinear-horizontal();
-  background-color: variables.$cafe_intenso;
+  background-color: variables.$color_principal;
   .tarjeta-detalles{
     @include mixins.alinear-vertical();
     @include responsive.dispositivo("movil");
@@ -182,7 +193,7 @@ header {
     z-index: 1000;
 
     #nav-links a.activo {
-        color: variables.$naranja_suave;
+        color: variables.$color_secundario;
         font-weight: bold;
 
         @media (max-width: 767px) {
@@ -212,8 +223,8 @@ header {
 
 
 .piePagina {
-    background-color: rgb(33, 14, 2);
-    color: variables.$naranja_suave;
+    background-color: variables.$color_principal;
+    color: variables.$color_secundario;
     padding: 40px 20px 20px 20px;
 }
 
@@ -257,7 +268,7 @@ header {
 }
 
 .iconoRed {
-    background-color: variables.$naranja_suave;
+    background-color: variables.$color_secundario;
     color: white;
     text-decoration: none;
     width: 40px;
@@ -276,7 +287,7 @@ header {
 
 .lineaSeparadora {
     border: none;
-    border-top: 1px solid variables.$naranja_suave;
+    border-top: 1px solid variables.$color_secundario;
     margin: 20px auto;
     max-width: 1100px;
 }
@@ -285,15 +296,6 @@ header {
     text-align: center;
     font-size: 14px;
     color: variables.$naranja_leve;
-}
-
-
-
-.carrusel:hover {
-
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 230, 255, 0.15);
-    border-color: gold;
 }
 
 .buscador {
@@ -315,7 +317,7 @@ header {
 
         &:focus {
             background:variables.$blanco;
-            box-shadow: 0 0 0 2px variables.$naranja_suave;
+            box-shadow: 0 0 0 2px variables.$color_secundario;
         }
     }
 
@@ -327,7 +329,7 @@ header {
         width: 50px;
         height: 40px;
         border-radius: 50px;
-        background-color: variables.$naranja_suave;
+        background-color: variables.$color_secundario;
     }
     @media (max-width: 768px) {
     .buscador {
@@ -340,7 +342,7 @@ header {
     }
 }
 }
-.bebidas {
+#servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -376,7 +378,7 @@ header {
 
       p {
         margin: 0;
-        color:variables.$naranja_suave;
+        color:variables.$color_secundario;
         font-weight: bold;
       }
     }
@@ -391,14 +393,14 @@ header {
 
 // Tablet
 @media (max-width: 900px) {
-  .bebidas {
+  #servicios {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 // Celular
 @media (max-width: 500px) {
-  .bebidas {
+  #servicios {
     grid-template-columns: 1fr;
   }
   #titulo{
@@ -425,7 +427,7 @@ header {
 
   label {
     font-weight: bold;
-    color:variables.$cafe_intenso;
+    color:variables.$color_principal;
   }
 
   input {
@@ -435,7 +437,7 @@ header {
     outline: none;
 
     &:focus {
-      border-color: variables.$cafe_intenso;
+      border-color: variables.$color_principal;
     }
   }
 
@@ -444,7 +446,7 @@ header {
   button {
     margin-top: 1rem;
     padding: 1rem;
-    background: variables.$naranja_suave;
+    background: variables.$color_secundario;
     color: variables.$blanco;
     border: none;
     border-radius: 10px;
@@ -452,7 +454,7 @@ header {
     font-weight: bold;
 
     &:hover {
-      background: #8b4513;
+      background: variables.$color_principal;
     }
   }
 }
