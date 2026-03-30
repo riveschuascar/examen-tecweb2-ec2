@@ -2,215 +2,155 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluciones Tecnologicas</title>
-    <link rel="stylesheet" href="dist/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones Tecnologicas</title>
 
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <div id="logo">
-                <img src="img/streamline-plump-color_deepfake-technology-1-flat.png" alt="imagenLogo">
-                <h2>Soluciones Tecnologicas</h2>
-            </div>
-            <ul id="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Servicios</a></li>
-                <li><a href="contacto.html">Formulario</a></li>
-            </ul>
-            <button id="btn-menu" class="btn-hamburguesa">☰</button>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div id="logo">
+        <img src="img/streamline-plump-color_deepfake-technology-1-flat.png" alt="imagenLogo">
+        <h2>Soluciones Tecnologicas</h2>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+      </ul>
+      <button id="btn-menu" class="btn-hamburguesa">☰</button>
+    </nav>
+  </header>
 
-    <!-- HERO -->
-    <div class="hero">
-        <h1 class="tituloPrincipal">Bienvenidos A Soluciones Tecnologicas</h1>
-        <h3 class="p-banner">Cuentanos tu idea</h3>
-        <div class="ver-servicios">
-            <a href="#" class="btn-menu">Ver Nuestros servicios</a>
-        </div>
+  <!-- HERO -->
+  <div id="hero">
+    <h1 class="tituloPrincipal">Bienvenidos A Soluciones Tecnologicas</h1>
+    <h3 class="p-banner">Cuentanos tu idea</h3>
+    <div class="ver-servicios">
+      <a href="#servicios" class="btn-menu">Ver Nuestros servicios</a>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <div class="buscador"> <input type="text" id="buscadorInput" placeholder="Buscar productos...">
+  </div>
+  <p id="mensajeVacio">Lo siento, aún no contamos con ese producto</p>
+  <link rel="stylesheet" href="dist/css/style.css">
+  <div id="servicios">
+    <article>
+      <img src="img/curso-frontend.avif" alt="curso frontend">
+      <div class="NombrePrecio">
+        <h3>Desarrollo Frontend</h3>
+        <p>Aprende lo fundamental de HTML, CSS y JavaScript para crear interfaces de usuario modernas y
+          responsivas.</p>
+        <p>250 bs/semana</p>
+      </div>
+      <button>Ver más detalles</button>
+    </article>
+    <article>
+      <img src="img/curso-backend.avif" alt="curso backend">
+      <div class="NombrePrecio">
+        <h3>Desarrollo Backend</h3>
+        <p>Aprende lo fundamental de Python, Node.js y bases de datos para crear aplicaciones web robustas y escalables.
+        </p>
+        <p>250 bs/semana</p>
+      </div>
+      <button>Ver más detalles</button>
+    </article>
+    <article>
+      <img src="img/curso-c++.webp" alt="curso c++">
+      <div class="NombrePrecio">
+        <h3>Programación en C++</h3>
+        <p>Aprende los fundamentos de la programación en C++ para desarrollar aplicaciones de alto rendimiento.</p>
+        <p>250 bs/semana</p>
+      </div>
+      <button>Ver más detalles</button>
+    </article>
+    <article>
+      <img src="img/curso-python.webp" alt="curso python">
+      <div class="NombrePrecio">
+        <h3>Programación en Python</h3>
+        <p>Aprende los fundamentos de la programación en Python para desarrollar aplicaciones web y de data science.</p>
+        <p>250 bs/semana</p>
+      </div>
+      <button>Ver más detalles</button>
+    </article>
+    <article>
+      <img src="img/curso-marketing-digital.jpg" alt="curso marketing digital">
+      <div class="NombrePrecio">
+        <h3>Marketing Digital</h3>
+        <p>Aprende las estrategias y herramientas para promocionar productos y servicios en línea.</p>
+        <p>250 bs/semana</p>
+      </div>
+      <button>Ver más detalles</button>
+    </article>
+    <article>
+      <img src="img/curso-redessociales.jpg" alt="curso redes sociales">
+      <div class="NombrePrecio">
+        <h3>Redes Sociales</h3>
+        <p>Aprende a gestionar y promocionar tu marca en las principales plataformas de redes sociales.</p>
+        <p>250 bs/semana</p>
+      </div>
+      <button>Ver más detalles</button>
+    </article>
+  </div>
+  </div>
+
+  <!-- FORMULARIO -->
+  <div id="formulario">
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" id="nombre">
+
+    <label for="email">Email</label>
+    <input type="email" id="email">
+
+    <label for="tipoServicio">Tipo de Servicio</label>
+    <select id="tipoServicio">
+      <option value="desarrollo">Desarrollo de Software</option>
+      <option value="diseño">Diseño Web</option>
+      <option value="consultoria">Consultoría Tecnológica</option>
+    </select>
+
+    <label for="mensaje">Mensaje</label>
+    <input type="text" id="mensaje">
+
+
+
+    <button onclick="enviarFormulario()">Enviar Mensaje</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="piePagina">
+    <div class="contenedorFooter">
+
+      <div class="seccionFooter">
+        <h2>Soluciones Tecnologicas</h2>
+        <p>Las mejores soluciones tecnologicas.</p>
+      </div>
+
+      <div class="seccionFooter">
+        <h3>Horario</h3>
+        <p>Lunes - Viernes: 7:00 AM - 9:00 PM</p>
+        <p>Sábados y Domingos: 8:00 AM - 10:00 PM</p>
+      </div>
+
+      <div class="seccionFooter">
+        <h3>Contacto</h3>
+        <p>Av. Principal 123</p>
+        <p>+34 123 456 789</p>
+        <p>hola@SolucionesTecnologicas.com</p>
+      </div>
+
     </div>
 
-    <!-- BEBIDAS -->
-    <div class="buscador"> <input type="text" id="buscadorInput" placeholder="Buscar productos...">
-    </div>
-    <p id="mensajeVacio">Lo siento, aún no contamos con ese producto</p>
-    <div id="bebidasCalientes">
-        <div class="imagenTitulo">
-            <h2>Desarrollo WEB</h2>
-        </div>
-        <div class="bebidas">
-            <article>
-                <img src="img/curso-frontend.avif" alt="curso frontend">
-                <div class="NombrePrecio">
-                    <h3>Desarrollo Frontend</h3>
-                    <p>Aprende lo fundamental de HTML, CSS y JavaScript para crear interfaces de usuario modernas y
-                        responsivas.</p>
-                    <p>250 bs/semana</p>
-                </div>
-                <button>Ver más detalles</button>
-            </article>
-            <article>
-                <img src="img/curso-backend.avif" alt="curso backend">
-                <div class="NombrePrecio">
-                    <h3>Desarrollo Backend</h3>
-                    <p>Aprende lo fundamental de Python, Node.js y bases de datos para crear aplicaciones web robustas y escalables.</p>
-                    <p>250 bs/semana</p>
-                </div>
-                <button>Ver más detalles</button>
-            </article>
-        </div>
-    </div>
-    <div id="snacks">
-        <div class="imagenTitulo">
-            <h2>Programacion</h2>
-        </div>
-        <div class="bebidas">
-            <article>
-                <img src="img/curso-c++.webp" alt="curso c++">
-                <div class="NombrePrecio">
-                    <h3>Programación en C++</h3>
-                    <p>Aprende los fundamentos de la programación en C++ para desarrollar aplicaciones de alto rendimiento.</p>
-                    <p>250 bs/semana</p>
-                </div>
-                <button>Ver más detalles</button>
-            </article>
-            <article>
-                <img src="img/curso-python.webp" alt="curso python">
-                <div class="NombrePrecio">
-                    <h3>Programación en Python</h3>
-                    <p>Aprende los fundamentos de la programación en Python para desarrollar aplicaciones web y de data science.</p>
-                    <p>250 bs/semana</p>
-                </div>
-                <button>Ver más detalles</button>
-            </article>
-        </div>
-    </div>
-    <div id="snacks">
-        <div class="imagenTitulo">
-            <h2>Marketing</h2>
-        </div>
-        <div class="bebidas">
-            <article>
-                <img src="img/curso-marketing-digital.jpg" alt="curso marketing digital">
-                <div class="NombrePrecio">
-                    <h3>Marketing Digital</h3>
-                    <p>Aprende las estrategias y herramientas para promocionar productos y servicios en línea.</p>
-                    <p>250 bs/semana</p>
-                </div>
-                <button>Ver más detalles</button>
-            </article>
-            <article>
-                <img src="img/curso-redessociales.jpg" alt="curso redes sociales">
-                <div class="NombrePrecio">
-                    <h3>Redes Sociales</h3>
-                    <p>Aprende a gestionar y promocionar tu marca en las principales plataformas de redes sociales.</p>
-                    <p>250 bs/semana</p>
-                </div>
-                <button>Ver más detalles</button>
-            </article>
-        </div>
-    </div>
-    <div class="servicios">
-        <article>
-            <img src="" alt="">
-            <h3>Espresso</h3>
-            <p>25 bs</p>
-            <p>Espresso Italiano clásico</p>
-        </article>
+    <p>© 2026 Soluciones Tecnologicas</p>
+  </footer>
 
-        <article>
-            <img src="img/americano.jpg" alt="">
-            <h3>Americano</h3>
-            <p>20 bs</p>
-            <p>Espresso con agua caliente</p>
-        </article>
-
-        <article>
-            <img src="img/capuccino.jpg" alt="">
-            <h3>Capuccino</h3>
-            <p>20 bs</p>
-            <p>Espresso con leche cremosa</p>
-        </article>
-
-        <article>
-            <img src="img/caramelMachiato.jpg" alt="">
-            <h3>Caramel Machiato</h3>
-            <p>20 bs</p>
-            <p>Capuccino con caramelo</p>
-        </article>
-
-        <article>
-            <img src="img/mocha.jpg" alt="">
-            <h3>Mocha</h3>
-            <p>25 bs</p>
-            <p>Contiene chocolate</p>
-        </article>
-
-        <article>
-            <img src="img/flatWhite.jpg" alt="">
-            <h3>Flat White</h3>
-            <p>30 bs</p>
-            <p>Espresso con microespuma</p>
-        </article>
-    </div>
-
-    <!-- FORMULARIO -->
-    <div id="formulario">
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" id="nombre">
-
-        <label for="email">Email</label>
-        <input type="email" id="email">
-
-        <label for="tipoServicio">Tipo de Servicio</label>
-        <select id="tipoServicio">
-            <option value="desarrollo">Desarrollo de Software</option>
-            <option value="diseño">Diseño Web</option>
-            <option value="consultoria">Consultoría Tecnológica</option>
-        </select>
-
-        <label for="mensaje">Mensaje</label>
-        <input type="text" id="mensaje">
-
-
-
-        <button onclick="enviarFormulario()">Enviar Mensaje</button>
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="piePagina">
-        <div class="contenedorFooter">
-
-            <div class="seccionFooter">
-                <h2>Soluciones Tecnologicas</h2>
-                <p>Las mejores soluciones tecnologicas.</p>
-            </div>
-
-            <div class="seccionFooter">
-                <h3>Horario</h3>
-                <p>Lunes - Viernes: 7:00 AM - 9:00 PM</p>
-                <p>Sábados y Domingos: 8:00 AM - 10:00 PM</p>
-            </div>
-
-            <div class="seccionFooter">
-                <h3>Contacto</h3>
-                <p>Av. Principal 123</p>
-                <p>+34 123 456 789</p>
-                <p>hola@SolucionesTecnologicas.com</p>
-            </div>
-
-        </div>
-
-        <p>© 2026 Soluciones Tecnologicas</p>
-    </footer>
-
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
