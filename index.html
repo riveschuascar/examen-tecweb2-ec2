@@ -2,146 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Infinito</title>
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soluciones Tecnologicas</title>
+  <div class="buscador"> <input type="text" id="buscadorInput" placeholder="Buscar productos...">
+  </div>
+  <p id="mensajeVacio">Lo siento, aún no contamos con ese producto</p>
+  <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 <body>
-    <header>
-         <nav>
-            <div id="logo">
-             <img src="img/dish_spoon_icon-icons.com_52313.png" alt="iconoDeUnCapucchino">
-             <h2>Café Infinito</h2>
-            </div>
-            <ul id="nav-links">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="menu.html">Menu</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        <button id="btn-menu" class="btn-hamburguesa">☰</button> 
-        </nav>
-    </header>
 
-    <br><br>
-
-    <div class="hero">
-      <h1 class="tituloPrincipal">Bienvenidos A Cafe Infinito</h1>
-      <h3 class="p-banner">Donde cada taza cuenta una histroria</h3>
-      <div class="ver-menu">
-        <a href="menu.html" class="btn-menu">Ver Nuestro menu</a>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div id="logo">
+        <img src="img/streamline-plump-color_deepfake-technology-1-flat.png" alt="imagenLogo">
+        <h2>Soluciones Tecnologicas</h2>
       </div>
-    </div>
+      <ul id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Servicios</a></li>
+        <li><a href="contacto.html">Formulario</a></li>
+      </ul>
+      <button id="btn-menu" class="btn-hamburguesa">☰</button>
+    </nav>
+  </header>
 
-    <div class="detalles">
-      <article class="tarjeta-detalles">
-        <img src="img/cafe premium.png" alt="cafe-premium">
-        <h4 class="h4-detalles">Cafe Premium</h4>
-        <p>Granos selectos de origen único, tostados artesanalmente</p>
+  <!-- HERO -->
+  <div class="hero">
+    <h1 class="tituloPrincipal">Bienvenidos A Soluciones Tecnologicas</h1>
+    <h3 class="p-banner">Cuentanos tu idea</h3>
+    <div class="ver-servicios">
+      <a href="#" class="btn-menu">Ver Nuestros servicios</a>
+    </div>
+  </div>
+
+  <!-- BEBIDAS -->
+
+    <div class="servicios">
+
+      <article>
+        <img src="" alt="">
+        <h3>Espresso</h3>
+        <p>25 bs</p>
+        <p>Espresso Italiano clásico</p>
       </article>
-      <article class="tarjeta-detalles">
-        <img src="img/corazon.png" alt="Hecho con Amor">
-        <h4 class="h4-detalles">Hecho con Amor</h4>
-        <p>Cada bebida es preparada con dedicación y pasión por nuestros baristas</p>
+
+      <article>
+        <img src="img/americano.jpg" alt="">
+        <h3>Americano</h3>
+        <p>20 bs</p>
+        <p>Espresso con agua caliente</p>
       </article>
-      <article class="tarjeta-detalles">
-        <img src="img/Premiados.png" alt="Premiados">
-        <h4 class="h4-detalles">Premiados</h4>
-        <p>Reconocidos como la mejor cafetería de especialidad de la ciudad</p>
+
+      <article>
+        <img src="img/capuccino.jpg" alt="">
+        <h3>Capuccino</h3>
+        <p>20 bs</p>
+        <p>Espresso con leche cremosa</p>
       </article>
+
+      <article>
+        <img src="img/caramelMachiato.jpg" alt="">
+        <h3>Caramel Machiato</h3>
+        <p>20 bs</p>
+        <p>Capuccino con caramelo</p>
+      </article>
+
+      <article>
+        <img src="img/mocha.jpg" alt="">
+        <h3>Mocha</h3>
+        <p>25 bs</p>
+        <p>Contiene chocolate</p>
+      </article>
+
+      <article>
+        <img src="img/flatWhite.jpg" alt="">
+        <h3>Flat White</h3>
+        <p>30 bs</p>
+        <p>Espresso con microespuma</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- FORMULARIO -->
+  <div id="formulario">
+    <label for="nombre">Nombre Completo</label>
+    <input type="text" id="nombre">
+
+    <label for="email">Email</label>
+    <input type="email" id="email">
+     
+      <label for="tipoServicio">Tipo de Servicio</label>
+    <select id="tipoServicio">
+      <option value="desarrollo">Desarrollo de Software</option>
+      <option value="diseño">Diseño Web</option>
+      <option value="consultoria">Consultoría Tecnológica</option>
+    </select>  
+
+    <label for="mensaje">Mensaje</label>
+    <input type="text" id="mensaje">
+
+  
+
+    <button onclick="enviarFormulario()">Enviar Mensaje</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="piePagina">
+    <div class="contenedorFooter">
+
+      <div class="seccionFooter">
+        <h2>Soluciones Tecnologicas</h2>
+        <p>Las mejores soluciones tecnologicas.</p>
+      </div>
+
+      <div class="seccionFooter">
+        <h3>Horario</h3>
+        <p>Lunes - Viernes: 7:00 AM - 9:00 PM</p>
+        <p>Sábados y Domingos: 8:00 AM - 10:00 PM</p>
+      </div>
+
+      <div class="seccionFooter">
+        <h3>Contacto</h3>
+        <p>Av. Principal 123</p>
+        <p>+34 123 456 789</p>
+        <p>hola@SolucionesTecnologicas.com</p>
+      </div>
+
     </div>
 
-    <div class="biografia">
-      <div class="img-bio">
-        <img src="img/historia.png" alt="imagen de nuestra histroria juntos :(">
-      </div>
-      <div class="texto-bio">
-        <h2>Nuestra Historia</h2>
-        <p>Desde 2025, Café Infinito ha sido el corazón de nuestra comunidad, ofreciendo café de especialidad y un espacio acogedor donde las conexiones florecen asi que trae a tu saliente no te arrepentiras.</p>
-        <br>
-        <p>Nuestro compromiso es simple: servir el mejor café posible mientras creamos momentos memorables para cada cliente que cruza nuestra puerta.</p>
-      </div>
-    </div>
+    <p>© 2026 Soluciones Tecnologicas</p>
+  </footer>
 
-    <div class="galeria">
-      <h2>Galeria Profesional</h2>
-      <br>
-      <div class="fotos">
-        <img src="img/cafe-galeria.png" alt="nuestro mejor cafe" class="carrusel">
-        <img src="img/masas-galeria.png" alt="masitas" class="carrusel">
-        <img src="img/granos.png" alt="materia prima" class="carrusel">
-      </div>
-    </div>
-
-
-    <div class="visitanos">
-      <img src="img/reloj.png" alt="reloj de horarios">
-      <h2>Visitanos Cuando Gustes</h2>
-      <p>Lunes a Viernes: 7:00 AM - 9:00 PM | Sábados y Domingos: 8:00 AM - 10:00 PM</p>
-      <div class="contacta">
-        <a href="contacto.html" class="btn-contacto">Encuentranos</a>
-      </div>
-    </div>
-
-        <footer class="piePagina">
-        <div class="contenedorFooter">
-
-            <div class="seccionFooter">
-                <h2 class="tituloLogo">
-                    <img src="img/dish_spoon_icon-icons.com_52313.png" alt="logo de la cafeteria">Café Infinito
-                </h2>
-                <p class="descripcion">
-                    El mejor café artesanal de la ciudad.<br>
-                    Hecho con pasión, servido con amor.
-                </p>
-            </div>
-
-            <div class="seccionFooter">
-                <h3 class="tituloSeccion">Horario</h3>
-                <p>Lunes - Viernes</p>
-                <p>7:00 AM - 9:00 PM</p>
-                <br>
-                <p>Sábados y Domingos</p>
-                <p>8:00 AM - 10:00 PM</p>
-            </div>
-
-            <div class="seccionFooter">
-                <h3 class="tituloSeccion">Contacto</h3>
-                <p><img src="img/ubi.png" alt="icono de ubicacion"> Av. Principal 123, Ciudad</p>
-                <p><img src="img/mynaui_telephone.png" alt="icono de telefono"> +34 123 456 789</p>
-                <p><img src="img/gmail.png" alt="icono de gmail"> hola@cafeInfinito.com</p>
-            </div>
-
-            <div class="seccionFooter">
-                <h3 class="tituloSeccion">Síguenos</h3>
-                <div class="redesSociales">
-                    <a href="#" class="iconoRed"><img src="img/insta.png" alt="icono de insta"></a>
-                    <a href="#" class="iconoRed"><img src="img/whats.png" alt="icono de whatsapp"></a>
-                    <a href="#" class="iconoRed"><img src="img/twitter.png" alt="icono de twitter"></a>
-                </div>
-            </div>
-
-        </div>
-
-        <hr class="lineaSeparadora">
-
-        <p class="copyright">
-            © 2026 Café Infinito. Todos los derechos reservados.
-        </p>
-    </footer>
-  <button id="btn-subir" class="btn-subir">↑</button>
   <script src="js/main.js"></script>
 </body>
 
