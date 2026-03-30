@@ -47,7 +47,7 @@ header {
                 transition: 0.3s;
                 
                 &.activo, &:hover { 
-                    color: variables.$naranja_suave; 
+                    color: variables.$color_secundario; 
                     font-weight: bold; 
                 }
             }
@@ -78,7 +78,7 @@ header {
             font-size: 2.5rem;
             background: none;
             border: none;
-            color: variables.$naranja_suave;
+            color: variables.$color_secundario;
             cursor: pointer;
 
             @media (max-width: 767px) {
@@ -95,7 +95,7 @@ header {
     z-index: 1000;
 
     #nav-links a.activo {
-        color: variables.$naranja_suave;
+        color: variables.$color_secundario;
         font-weight: bold;
 
         @media (max-width: 767px) {
@@ -125,8 +125,8 @@ header {
 
 
 .piePagina {
-    background-color: rgb(33, 14, 2);
-    color: variables.$naranja_suave;
+    background-color: variables.$color_principal;
+    color: variables.$color_secundario;
     padding: 40px 20px 20px 20px;
 }
 
@@ -170,7 +170,7 @@ header {
 }
 
 .iconoRed {
-    background-color: variables.$naranja_suave;
+    background-color: variables.$color_secundario;
     color: white;
     text-decoration: none;
     width: 40px;
@@ -189,7 +189,7 @@ header {
 
 .lineaSeparadora {
     border: none;
-    border-top: 1px solid variables.$naranja_suave;
+    border-top: 1px solid variables.$color_secundario;
     margin: 20px auto;
     max-width: 1100px;
 }
